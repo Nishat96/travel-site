@@ -1,0 +1,20 @@
+.login__area{
+    border: 1px solid gray;
+    margin-top: 30px;
+    margin-left: 420px;
+    width: 350px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.login__area > input{
+    border: none;
+    width: 300px;  
+}
+.loginBtn{
+    background-color: #F9A51A;
+    color: black;
+    width: 330px;
+    border: none;
+    padding: 7px;
+    margin-top: 10px;
+}

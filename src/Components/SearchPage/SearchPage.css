@@ -1,0 +1,34 @@
+.search__page{
+    display: flex;
+    margin-left: 80px;
+    margin: 20px;
+    padding: 20px;
+}
+.hotel_img img{
+    width: 350px;
+    border-radius: 10px;
+}
+.search__pageInfo{
+   margin-left: 10px;
+   width: 400px;
+   padding-left: 15px;
+}
+.search__pageInfo p {
+    font-size: 14px;
+}
+.title{
+    font-weight: 600;
+    font-size: 20px !important;
+}
+.gray__color{
+    color: gray;
+}
+.search__pageInfoBottom{
+    display: flex;
+}
+.search__pageInfoBottom p {
+    font-size: 13px;
+}
+.starClass{
+    color: #f3a920;
+}

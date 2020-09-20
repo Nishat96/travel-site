@@ -1,0 +1,18 @@
+header{
+    border-bottom: 1px solid lightgray;
+    margin-right: 40px;
+}
+.logo{
+    margin-bottom: 20px;
+}
+nav{
+    margin-right: 160px;
+    font-weight: 600;
+}
+.search__info{
+    width: 100%;
+}
+.top{
+    
+    margin-left: 80px;
+}

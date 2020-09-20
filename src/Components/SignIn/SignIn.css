@@ -1,0 +1,40 @@
+.accountBtn{
+    background-color: #F9A51A;
+    color: black;
+    width: 330px;
+    border: none;
+    padding: 7px;
+    margin-top: 10px;
+   font-weight: 600;
+}
+.checkBox{
+    background-color: #111110;
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 30px;
+    text-align: center;
+    color: #F9A51A;
+}
+.signIn__area{
+    border: 1px solid gray;
+    margin-top: 30px;
+    margin-left: 420px;
+    width: 350px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.signIn__area > input{
+    border: none;
+    width: 300px;
+    outline: none;
+}
+.bottomPart{
+    margin-left: 420px;
+    width: 350px;
+}
+.bottomPart > button{
+    border: 1px solid gray;
+    border-radius: 30px;
+    width: 400px;
+    margin-bottom: 15px;
+}

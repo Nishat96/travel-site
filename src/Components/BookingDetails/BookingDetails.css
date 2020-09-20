@@ -1,0 +1,48 @@
+.booking__area{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.73)),url('../../images/Rect1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 600px;
+}
+.booking__date{
+    background-color: white;
+    height: 500px;
+    width: 350px;
+    margin-top: 60px;
+    padding: 15px;
+
+}
+.booking__date > input{
+    border: none;
+    background: #F2F2F2 !important;
+    width: 300px;
+    padding: 10px;
+}
+.booking__date > input::placeholder{
+    color: black !important;
+}
+.booking__date > h4{
+    color: gray;
+    font-weight: 400;
+}
+.booking__center{
+    display: flex;
+}
+.booking__info{
+    width: 60%;
+    margin: 60px 50px;
+    color: white;
+}
+.from__to > button {
+    background-color: #F9A51A;
+    color: black;
+    border-radius: 5px;
+    text-transform: inherit;
+    font-weight: 600;
+    margin-top: 30px;
+}
+.from__to > button:hover{
+    background-color: black;
+    color: #F9A51A;
+}
