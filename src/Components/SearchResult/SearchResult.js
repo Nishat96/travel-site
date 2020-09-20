@@ -47,7 +47,7 @@ const SearchResult = ({displayName}) => {
             />
             <SearchPage
                 img = {coxs3}
-                title = "AR Lounge & Pool(r&r + b&b"
+                title = "AR Lounge & Pool(r&r + b&b)"
                 description = "4 guest . 2 bedrooms . 2 beds . 2 baths"
                 condition = "Wif Air Conditioning Kitchen"
                 flexibility = "Cancellation flexibility available"

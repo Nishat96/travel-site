@@ -3,14 +3,15 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 600px;
+   
 }
 .booking__date{
     background-color: white;
-    height: 500px;
+    height: 300px;
     width: 350px;
     margin-top: 60px;
     padding: 15px;
+    margin-bottom: 40px;
 
 }
 .booking__date > input{
@@ -34,15 +35,19 @@
     margin: 60px 50px;
     color: white;
 }
-.from__to > button {
+.from__to{
+    margin-top: 20px;
+}
+.from__to .start__booking {
     background-color: #F9A51A;
     color: black;
     border-radius: 5px;
     text-transform: inherit;
     font-weight: 600;
     margin-top: 30px;
+    padding: 5px 10px;
 }
-.from__to > button:hover{
+.from__to .start__booking:hover{
     background-color: black;
     color: #F9A51A;
 }

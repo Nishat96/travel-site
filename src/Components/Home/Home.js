@@ -1,4 +1,4 @@
-import React from 'react';
+import React  from 'react';
 import logo from '../../images/logoW.png';
 import './Home.css';
 import SearchIcon from '@material-ui/icons/Search';
@@ -10,6 +10,10 @@ import { Link } from 'react-router-dom';
 import { Button } from '@material-ui/core';
 
 const Home = () => {
+
+  
+
+
     return (
       <div className="home">
         <header>
@@ -34,18 +38,28 @@ const Home = () => {
               Aggameda Khyang monastery is home to bronze statues and centuries-old Buddhist manuscripts. </p>
            <Link to='/booking'><button className="bookingBtn">Booking -></button></Link> 
           </div>
+
+              <Link className="card" to="/booking">
                 <Card
+                    
                     src={coxs}
                     title="COX'S BAZAR"
                 />
+                </Link>
+                <Link className="card" to="/sreemongol">
                 <Card
+                  
                     src={sreemongol}
                     title="SREEMANGAL"
                 />
+                </Link>
+                <Link className="card" to="/sundarban">
                 <Card
+                   
                     src={sundorban}
                     title="SUNDARBANS"
                 />
+                </Link>
             </div>
 
       </div>

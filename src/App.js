@@ -8,12 +8,16 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import BookingDetails from './Components/BookingDetails/BookingDetails';
 import Login from './Components/Login/Login';
 import SignIn from './Components/SignIn/SignIn';
 import SearchResult from './Components/SearchResult/SearchResult';
 import {createContext} from 'react';
 import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
+import CoxsBazar from './Components/CoxsBazar/CoxsBazar';
+import SreeMongol from './Components/SreeMongol/SreeMongol';
+import Sundarban from './Components/Sundarban/Sundarban';
+
+
 
 
 export const UserContext = createContext();
@@ -28,7 +32,13 @@ function App() {
             <Home/>
           </Route>
           <Route path = "/booking">
-            <BookingDetails/>
+            <CoxsBazar/>
+          </Route>
+          <Route path = "/sreemongol">
+            <SreeMongol/>
+          </Route>
+          <Route path = "/sundarban">
+            <Sundarban/>
           </Route>
           <Route path = "/signin">
             <SignIn/>
@@ -36,12 +46,12 @@ function App() {
           <Route path = "/login">
             <Login/>
           </Route>
-          <Route path = "/searchresult">
+          {/* <Route path = "/searchresult">
             <SearchResult/>
-          </Route>
-          {/* <PrivateRoute path = "/searchresult">
+          </Route> */}
+          <PrivateRoute path = "/searchresult">
             <SearchResult/>
-          </PrivateRoute> */}
+          </PrivateRoute>
           <Route exact path = "/">
             <Home/>
           </Route>
