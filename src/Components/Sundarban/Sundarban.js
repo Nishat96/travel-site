@@ -22,27 +22,24 @@ const Sundarban = () => {
             </header>
             <div className="booking__center">
                 <div className="booking__info">
-                    <h1>COX'S BAZAR</h1>
-                    <p>Cox’s Bazar is a town on the southeast coast of Bangladesh. 
-                    It’s known for its very long, sandy beachfront, stretching from Sea Beach in the north to Kolatoli Beach in the south. 
-                    Aggameda Khyang monastery is home to bronze statues and centuries-old Buddhist manuscripts.</p>
+                    <h1>SUNDARBANS</h1>
+                    <p>The Sundarbans is a mangrove area in the delta formed by the confluence of the Ganges, Brahmaputra and Meghna Rivers in the Bay of Bengal. It spans from the Hooghly River in India's state of West Bengal to the Baleswar River in Bangladesh.
+                    Despite a total ban on all killing or capture of wildlife other than fish and some invertebrates, it appears that there is a consistent pattern of depleted biodiversity or loss of species in the 20th century, and that the ecological quality of the forest is declining. 
+                    </p>
                 </div>
-                    <div className="booking__date">
-                        <h4>Origin</h4>
-                        <input name="origin" type="text" placeholder="From" required/>
-                        <h4>Destination</h4>
-                        <input name="destination" type="text" placeholder="To" required/>
-                        <div className="from__to">
-                         <Link to="/searchresult">
+                <div className="booking__date">
+                    <h4>Origin</h4>
+                    <input name="origin" type="text" placeholder="From" required/>
+                    <h4>Destination</h4>
+                    <input name="destination" type="text" placeholder="To" required/>
+                    <div className="from__to">
+                        <Link to="/searchresultsundarban">
                             <button type="submit" className="start__booking"> Start Booking</button> 
                         </Link>
-                   </div>
-                  
-                   
+                    </div>
+                </div>
             </div>
-        </div>
-            
-        </div>
+       </div> 
     );
 };
 

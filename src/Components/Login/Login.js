@@ -12,7 +12,7 @@ const Login = () => {
     return (
         <div>
             <div>
-                    <WhiteHeader></WhiteHeader>
+                <WhiteHeader></WhiteHeader>
             </div>
             <div className="login__area">
                 <h1>Login</h1>
@@ -20,7 +20,6 @@ const Login = () => {
                 <input type="text" placeholder="Email"/> <br/><hr/>
                 <input type="password" placeholder="Password"/> <br/><hr/>
                 <input className="loginBtn" type="submit" value="Login"/>
-                   
                 </form> 
                 <p>Don't have an account? <Link to="/signin">Create an account</Link> </p>
             </div>

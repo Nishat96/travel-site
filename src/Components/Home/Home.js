@@ -10,18 +10,14 @@ import { Link } from 'react-router-dom';
 import { Button } from '@material-ui/core';
 
 const Home = () => {
-
-  
-
-
     return (
       <div className="home">
         <header>
-        <img class="logo" src={logo} alt=""/>
-          <div className="header__center">
-            <input placeholder="Search your Destination..." type="text"/>
-            <SearchIcon/>
-          </div>
+          <img class="logo" src={logo} alt=""/>
+            <div className="header__center">
+              <input placeholder="Search your Destination..." type="text"/>
+              <SearchIcon/>
+            </div>
           <nav> 
             <Link className="navLink" to="/news">News</Link>
             <Link className="navLink" to="/destination">Destination</Link>
@@ -36,32 +32,27 @@ const Home = () => {
             <p>Cox’s Bazar is a town on the southeast coast of Bangladesh. 
               It’s known for its very long, sandy beachfront, stretching from Sea Beach in the north to Kolatoli Beach in the south. 
               Aggameda Khyang monastery is home to bronze statues and centuries-old Buddhist manuscripts. </p>
-           <Link to='/booking'><button className="bookingBtn">Booking -></button></Link> 
+            <Link to='/booking'><button className="bookingBtn">Booking -></button></Link> 
           </div>
-
-              <Link className="card" to="/booking">
-                <Card
-                    
-                    src={coxs}
-                    title="COX'S BAZAR"
-                />
-                </Link>
-                <Link className="card" to="/sreemongol">
-                <Card
-                  
-                    src={sreemongol}
-                    title="SREEMANGAL"
-                />
-                </Link>
-                <Link className="card" to="/sundarban">
-                <Card
-                   
-                    src={sundorban}
-                    title="SUNDARBANS"
-                />
-                </Link>
-            </div>
-
+          <Link className="card" to="/booking">
+            <Card
+              src={coxs}
+              title="COX'S BAZAR"
+            />
+          </Link>
+          <Link className="card" to="/sreemongol">
+            <Card
+              src={sreemongol}
+              title="SREEMANGAL"
+          />
+          </Link>
+          <Link className="card" to="/sundarban">
+            <Card
+              src={sundorban}
+              title="SUNDARBANS"
+              />
+          </Link>
+        </div>
       </div>
     );
 };

@@ -18,7 +18,6 @@ const SignIn = () => {
     const [newUser, setNewUser] = useState(false);
     const [user, setUser] = useState({
         isSignedIn: false,
-        
         fname: '',
         // lname: '',
         password: '',
@@ -77,7 +76,6 @@ const SignIn = () => {
 
         if(e.target.name === 'email'){
             isFormValid = /\S+@\S+\.\S+/.test(e.target.value);
-            
         }
         if(e.target.name === 'password'){
             const isPasswordValid = e.target.value.length > 6;
@@ -97,8 +95,7 @@ const SignIn = () => {
                 const newUserInfo = {...user};
                 newUserInfo.error = '';
                 newUserInfo.success = true;
-                setUser(newUserInfo);
-               
+                setUser(newUserInfo);              
             })
             .catch(error => {
                 // Handle Errors here.
@@ -107,7 +104,6 @@ const SignIn = () => {
                 newUserInfo.success = false;
                 setUser(newUserInfo);
               });
-
         }
 
         if(!newUser && user.email && user.password){
@@ -142,7 +138,6 @@ const SignIn = () => {
                     <input type="checkbox" onChange={()=> setNewUser(!newUser)} name="newUser"/>
                     <label htmlFor="newUser">New User</label>
                 </div>
-
                 <h1> {newUser ? 'Create an account' : 'Login'}</h1>
                 {/* <p>First Name:{user.fname}</p>
                 <p>Last Name:{user.lname}</p>

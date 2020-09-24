@@ -16,8 +16,8 @@ import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
 import CoxsBazar from './Components/CoxsBazar/CoxsBazar';
 import SreeMongol from './Components/SreeMongol/SreeMongol';
 import Sundarban from './Components/Sundarban/Sundarban';
-
-
+import SearchResultSreemongol from './Components/SearchResultSreemongol/SearchResultSreemongol';
+import SearchResultSundarban from './Components/SearchResultSundarban/SearchResultSundarban';
 
 
 export const UserContext = createContext();
@@ -46,9 +46,12 @@ function App() {
           <Route path = "/login">
             <Login/>
           </Route>
-          {/* <Route path = "/searchresult">
-            <SearchResult/>
-          </Route> */}
+          <PrivateRoute path = "/searchresultsreemongol">
+            <SearchResultSreemongol/>
+          </PrivateRoute>
+          <PrivateRoute path = "/searchresultsundarban">
+            <SearchResultSundarban/>
+          </PrivateRoute>
           <PrivateRoute path = "/searchresult">
             <SearchResult/>
           </PrivateRoute>
@@ -60,7 +63,6 @@ function App() {
           </Route>
         </Switch>
       </Router>  
-    
     </UserContext.Provider>
   );
 }

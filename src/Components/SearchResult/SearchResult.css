@@ -9,10 +9,15 @@ nav{
     margin-right: 160px;
     font-weight: 600;
 }
-.search__info{
-    width: 100%;
-}
+
 .top{
     
     margin-left: 80px;
+}
+.hotel-section{
+    display: flex;
+}
+.related-map{
+    margin-top: 30px;
+    padding-right: 60px;
 }

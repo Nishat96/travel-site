@@ -56,6 +56,10 @@ header > nav {
     color: black;
     font-weight: 600;
     border-radius: 5px;
-    padding: 5px 15px;
+    padding: 5px 20px;
     text-transform: inherit;
+}
+.card{
+    text-decoration: none;
+
 }

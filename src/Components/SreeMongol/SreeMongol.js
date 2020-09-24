@@ -2,25 +2,23 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../images/logoW.png';
 import SearchIcon from '@material-ui/icons/Search';
-import { Button } from '@material-ui/core';
 
 const SreeMongol = () => {
     return (
         <div className="booking__area" >
-                
             <header >
-            <Link to='/home'>  <img class="logo" src={logo} alt=""/></Link>
-                <div className="header__center">
-                    <input placeholder="Search your Destination..." type="text"/>
-                    <SearchIcon/>
-                </div>
-                <nav> 
-                    <Link className="navLink" to="/news">News</Link>
-                    <Link className="navLink" to="/destination">Destination</Link>
-                    <Link className="navLink" to="/blog">Blog</Link>
-                    <Link className="navLink" to="/contact">Contact</Link>
-                    <Link className="login" to="/signin">Login</Link>
-                </nav>
+                <Link to='/home'>  <img class="logo" src={logo} alt=""/></Link>
+                    <div className="header__center">
+                        <input placeholder="Search your Destination..." type="text"/>
+                        <SearchIcon/>
+                    </div>
+                    <nav> 
+                        <Link className="navLink" to="/news">News</Link>
+                        <Link className="navLink" to="/destination">Destination</Link>
+                        <Link className="navLink" to="/blog">Blog</Link>
+                        <Link className="navLink" to="/contact">Contact</Link>
+                        <Link className="login" to="/signin">Login</Link>
+                    </nav>
             </header>
             <div className="booking__center">
                 <div className="booking__info">
@@ -33,12 +31,12 @@ const SreeMongol = () => {
                     <h4>Destination</h4>
                     <input name="destination" type="text" placeholder="To" required/>
                     <div className="from__to">
-                        <Link to="/searchresult">
+                        <Link to="/searchresultsreemongol">
                             <button className="start__booking"> Start Booking</button> 
                         </Link>
                    </div>
                 </div>
-        </div>
+            </div>
        </div> 
     );
 };
