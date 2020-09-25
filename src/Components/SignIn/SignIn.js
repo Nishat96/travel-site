@@ -1,6 +1,5 @@
 import React, { useContext, useState } from 'react';
 import { Link, useHistory, useLocation } from 'react-router-dom';
-import BottomPart from '../BottomPart/BottomPart';
 import WhiteHeader from '../WhiteHeader/WhiteHeader';
 import './SignIn.css';
 
@@ -123,11 +122,8 @@ const SignIn = () => {
                 setUser(newUserInfo);
               });
         }
-
         e.preventDefault();
     }
-    
-
     return (
         <div>
             <div>
@@ -145,19 +141,17 @@ const SignIn = () => {
                 <p> Password : {user.password}</p> */}
                <form onSubmit={handleSubmit}>
             { newUser &&  <input type="text" name="fname"  onBlur={handleBlur} placeholder="Your Full Name" /> } <br/> <hr/>
-                    {/* <input type="text" name="lname" onBlur={handleBlur} placeholder="Last Name" />  <br/> <hr/> */}
                     <input type="text" name="email" onBlur={handleBlur} placeholder="Email" required /><br/> <hr/>
                     <input type="password" name="password" onBlur={handleBlur} placeholder="Password" required/> <br/> <hr/>
-                    {/* <input type="password" name="confirmP" placeholder="Confirm Password" /> <br/>  <hr/> */}
                     <input className="accountBtn" type="submit" value={newUser ? 'Create Account' : 'Login'} />
-                    {/* <button className="accountBtn"> Create an account </button> <br/> */}
                     <p style={{color:'red'}} > {user.error} </p>   
                     {user.success && <p style={{color:'green'}} > User {newUser ? 'Created' : 'Logged In'} Successfully! </p>  } 
                 </form>
-                {/* <p>Already have an account? <Link to="/login">Login</Link></p> */}
             </div>
             <div className="bottomPart">
-                <p>-----------------------Or------------------------</p>
+                <div className="or__part"> 
+                    <div className="inline-left"> </div>  <div className="or">Or</div> <div className="inline-right"> </div> 
+                </div>
                 <Button onClick={handleFbSignIn}> <FaFacebook/> Continue with Facebook</Button> <br/>
                 <Button onClick={handleSignIn}>  <FcGoogle/> Continue with Google </Button>
             </div>

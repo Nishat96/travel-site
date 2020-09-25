@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import BottomPart from '../BottomPart/BottomPart';
 import WhiteHeader from '../WhiteHeader/WhiteHeader';
 import './Login.css';
 

@@ -17,8 +17,9 @@ header > nav > a{
     text-decoration: none;
     padding: 5px 15px;
 }
-.logo{
-    height: 80px;
-    width: 140px;
-    margin-top: 20px;
+.logoBlack{
+    height: 50px;
+    width: 100px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }

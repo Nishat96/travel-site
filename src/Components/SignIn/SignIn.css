@@ -38,3 +38,23 @@
     width: 400px;
     margin-bottom: 15px;
 }
+.or__part{
+    display: flex;
+}
+.inline-left{
+    margin: 30px 0px;
+    width: 320px;
+    height: 1px;
+    background-color: black;
+    margin-left: 50px;
+}
+.inline-right{
+    margin: 30px 0px;
+    width: 300px;
+    height: 1px;
+    background-color: black;
+}
+.or{
+    margin: 20px 0px;
+    padding: 0 7px;
+}

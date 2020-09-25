@@ -7,7 +7,7 @@ const SreeMongol = () => {
     return (
         <div className="booking__area" >
             <header >
-                <Link to='/home'>  <img class="logo" src={logo} alt=""/></Link>
+                <Link to='/home'> <img className="logoWhite" src={logo} alt=""/></Link>
                     <div className="header__center">
                         <input placeholder="Search your Destination..." type="text"/>
                         <SearchIcon/>

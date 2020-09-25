@@ -63,3 +63,10 @@ header > nav {
     text-decoration: none;
 
 }
+.logoWhite{
+    height: 50px;
+    width: 100px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+}

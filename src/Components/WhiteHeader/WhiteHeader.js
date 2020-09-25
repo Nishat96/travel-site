@@ -7,7 +7,7 @@ const WhiteHeader = () => {
     return (
         <div>
             <header>
-               <Link to='/home'><img class="logo" src={logo} alt=""/></Link>  
+               <Link to='/home'><img className="logoBlack" src={logo} alt=""/></Link>  
                 <nav> 
                     <Link to="/news">News</Link>
                     <Link to="/destination">Destination</Link>

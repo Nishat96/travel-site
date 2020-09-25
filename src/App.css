@@ -28,11 +28,9 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.user__email{
+  margin-left: 20px;
+  color: gray;
+  font-weight: 700;
 }
+
