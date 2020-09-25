@@ -5,7 +5,6 @@ import './CoxsBazar.css';
 import { Link } from 'react-router-dom';
 
 const CoxsBazar = () => {
-    //  const [showSearch, setShowSearch] = useState(false);
     return (
         <div className="booking__area" >
             <header >
@@ -34,17 +33,6 @@ const CoxsBazar = () => {
                     <input name="origin" type="text" placeholder="From" required/>
                     <h4>Destination</h4>
                     <input name="destination" type="text" placeholder="To" required/>
-                    {/* <div className="from__to">
-                        {showSearch && <Search/>}
-                        <Button onClick = {()=>
-                            setShowSearch(!showSearch)
-                        }
-                            className="searchButton"
-                            variant="outlined"> 
-                            {showSearch ? "Hide" : "Search Dates"}
-                        </Button>
-                    
-                        </div> */}
                     <div className="from__to">
                         <Link to="/searchresult">
                             <button type="submit" className="start__booking"> Start Booking</button> 
