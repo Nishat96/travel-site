@@ -1,5 +1,5 @@
 
-## Project Title 1: Travel-Site
+## Project Title: Travel-Site
 
 * Based on Tourism Management System
 * User have to register to book any place
